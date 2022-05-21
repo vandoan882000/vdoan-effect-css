@@ -4,9 +4,6 @@
   height: 300px;
   overflow: hidden;
   transition: all 0.5s;
-  &:hover {
-    border-bottom: 15px solid #ccc;
-  }
   &:hover .effect2__content {
     transform: translateY(30px);
   }
@@ -15,6 +12,9 @@
   }
   &:hover .effect2__hidden{
     opacity: 1;
+  }
+  &:hover .effect2__bottom-item {
+    transform: translateY(0);
   }
 }
 .effect2__image {
@@ -40,6 +40,18 @@
   transition: all 0.5s;
 }
 .effect2__hidden {
+  font-weight: 700;
   opacity: 0;
   transition: opacity 1.5s;
+}
+.effect2__bottom-item {
+  width: 100%;
+  height: 15px;
+  background-color: #ccc;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(15px);
+  transition: all 0.3s;
 }
