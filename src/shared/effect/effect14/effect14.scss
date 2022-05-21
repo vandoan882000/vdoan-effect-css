@@ -1,0 +1,117 @@
+.effect14{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  overflow: hidden;
+
+  &:hover img{
+    opacity: 0.8;
+    width: 520px;
+    height: 320px;
+  }
+  &:hover .effect14__box--1{
+    transform: translateY(0);
+  }
+  &:hover .effect14__box--2{
+    transform: translateX(0);
+  }
+  &:hover .effect14__box--3{
+    transform: translateX(0);
+  }
+
+
+}
+
+.effect14__box--1 {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 100, 173);
+  transform: translateY(-30px);
+  transition: all 0.5s;
+  z-index: 1;
+  opacity: 0.5;
+}
+.effect14__box--2 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-left: 250px solid transparent;
+  border-bottom: 330px solid rgb(255, 100, 173);
+  top: 0;
+  right: 0;
+  transform: translateY(-20px) translateX(300px);
+  transition: all 0.5s;
+  z-index: 2;
+  opacity: 0.5;
+}
+.effect14__box--3 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 250px solid transparent;
+  border-bottom: 330px solid rgb(255, 100, 173);
+  transform: translateY(-20px) translateX(-300px);
+  transition: all 0.5s;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.effect14 img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 500px;
+  height: 300px;
+}
+
+.effect14__title {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+
+.effect14 img {
+  transition: all 0.5s;
+}
+
+.effect13__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 10px;
+}
+[class*="effect13__icon"] {
+  transition: all 0.3s;
+  color: #fff;
+  margin : 10px 5px 10px 15px;
+}
+.effect13__icon--1 {
+  transform: translateX(25px);
+  transition: all 0.5s;
+}
+.effect13__icon--2 {
+  transform: translateX(25px);
+  transition: all 0.8s;
+}
+.effect13__icon--3 {
+  transform: translateX(25px);
+  transition: all 1s;
+}
+
+[class*="effect13__icon"]:hover {
+  color: red;
+}

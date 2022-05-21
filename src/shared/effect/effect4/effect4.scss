@@ -1,0 +1,66 @@
+
+.effect4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+  padding-right: 30px;
+  height: 300px;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: url(../../img/effect-css-img5.jpg);
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover .effect4__content {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 85px;
+    left: 30px;
+  }
+  &:hover .effect4__hr {
+    width: 80%;
+  }
+  &:hover .effect4__overlay {
+    opacity: 0.3;
+  }
+
+}
+.effect4__title {
+  z-index: 99;
+}
+.effect4__hr {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  width: 0;
+  height: 2px;
+  color: #fff;
+  background-color: #fff;
+  transition: width 0.3s;
+  z-index: 99;
+}
+
+.effect4__content {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 300px;
+  top: 85px;
+  left: 400px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+.effect4__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  opacity: 0.15;
+  z-index: 2;
+}

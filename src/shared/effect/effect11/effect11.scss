@@ -1,0 +1,139 @@
+.effect11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  overflow: hidden;
+  &:hover .effect11__box {
+    opacity: 1;
+
+  }
+  &:hover .effect11__icon--1 {
+    opacity: 1;
+    transform: translateY(50px) translateX(50px);
+
+  }
+  &:hover .effect11__icon--2 {
+    opacity: 1;
+    transform: translateY(50px) translateX(-50px);
+  }
+  &:hover .effect11__icon--3 {
+    opacity: 1;
+    transform: translateY(-50px) translateX(50px);
+  }
+  &:hover .effect11__icon--4 {
+    opacity: 1;
+    transform: translateY(-50px) translateX(-50px);
+  }
+  &:hover .effect11__title {
+    opacity: 0;
+  }
+  &:hover .effect11__box {
+    width: 150px;
+    height: 150px;
+  }
+}
+.effect11__box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 99;
+  background-color: transparent;
+}
+.effect11 img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.effect11__content {
+  z-index: -1;
+  position: relative;
+  opacity: 1;
+  transform: rotate(-45deg);
+}
+
+
+.effect11__title {
+  position: absolute;
+  top: 135px;
+  left: 140px;
+  transition: all 0.3s;
+}
+
+
+.effect11 img {
+  transition: all 0.5s;
+}
+
+.effect11__icon--1 {
+  position: absolute;
+  top: -70px;
+  left: -73px;
+  font-size: 16px;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(-50px) translateX(-50px);
+}
+
+.effect11__icon--2 {
+  position: absolute;
+  top: -70px;
+  left: 60px;
+  font-size: 16px;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(-50px) translateX(50px);
+}
+.effect11__icon--3 {
+  position: absolute;
+  top: 60px;
+  left: -73px;
+  font-size: 16px;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(50px) translateX(-50px);
+}
+.effect11__icon--4 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 16px;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(50px) translateX(50px);
+}
+
+[class*="effect11__icon--"]:hover {
+  color: red;
+}
+
+.effect11__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(118, 109, 243, 0.5);
+  opacity: 0.3;
+}

@@ -1,0 +1,88 @@
+.effect15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  overflow: hidden;
+  transform: all 0.3s;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: all 0.3s;
+  }
+  &:hover img {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  &:hover .effect15__hr1 {
+    opacity: 0.5;
+    transform: rotate(-45deg);
+  }
+  &:hover .effect15__hr2 {
+    opacity: 0.5;
+    transform: rotate(45deg);
+  }
+  &:hover .effect15__title {
+    transform: translateY(10px)
+  }
+  &:hover .effect15__description {
+    transform: translateY(-10px)
+  }
+
+
+}
+
+
+.effect15 img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 500px;
+  height: 300px;
+}
+
+.effect15__title {
+  position: absolute;
+  top: 85px;
+  z-index: 9;
+  transition: all 0.5s;
+}
+.effect15__hr1 {
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  height: 1px;
+  background-color: #fff;
+  color: #fff;
+  transition: all 0.5s;
+}
+.effect15__hr2 {
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  height: 1px;
+  background-color: #fff;
+  color: #fff;
+  transition: all 0.5s;
+
+}
+.effect15__description {
+  position: absolute;
+  text-align: center;
+  top: 165px;
+  z-index: 9;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+
+.effect15 img {
+  transition: all 0.5s;
+}
+

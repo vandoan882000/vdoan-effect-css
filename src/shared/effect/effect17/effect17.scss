@@ -1,0 +1,81 @@
+.effect17 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  overflow: hidden;
+
+  &:hover img {
+    opacity: 0.8;
+  }
+  &:hover .effect17__bg {
+    transform: rotate(45deg) translateY(479px);
+  }
+}
+
+
+.effect17 img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 500px;
+  height: 300px;
+}
+.effect17__box1 {
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  width: 170px;
+  height: 110px;
+  align-items: center;
+  text-align: left;
+  padding-left: 5px;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.effect17__title {
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+.effect17__description {
+
+  transition: all 0.5s;
+  color: #fff;
+}
+
+
+.effect17 img {
+  transition: all 0.5s;
+}
+.effect17__bg {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: auto;
+  height: auto;
+  transform: rotate(45deg) translateY(-479px);
+  transition: all 0.5s;
+}
+.effect17__bg2 {
+  width: 478px;
+  height: 478px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.effect17__bg1 {
+  width: 478px;
+  height: 478px;
+  background-color: #3085a3;
+  opacity: 0.5;
+}
+.effect17__bg3 {
+  width: 478px;
+  height: 478px;
+  background-color: #3085a3;
+  opacity: 0.2;
+}
