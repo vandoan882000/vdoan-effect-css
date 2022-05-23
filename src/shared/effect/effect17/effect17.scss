@@ -13,8 +13,10 @@
   &:hover .effect17__bg {
     transform: rotate(45deg) translateY(479px);
   }
+  &:hover .effect17__hidden {
+    visibility: visible;
+  }
 }
-
 
 .effect17 img {
   z-index: -1;
@@ -43,15 +45,14 @@
 }
 
 .effect17__description {
-
   transition: all 0.5s;
   color: #fff;
 }
 
-
 .effect17 img {
   transition: all 0.5s;
 }
+
 .effect17__bg {
   display: flex;
   flex-direction: column;
@@ -61,6 +62,7 @@
   transform: rotate(45deg) translateY(-479px);
   transition: all 0.5s;
 }
+
 .effect17__bg2 {
   width: 478px;
   height: 478px;
@@ -78,4 +80,17 @@
   height: 478px;
   background-color: #3085a3;
   opacity: 0.2;
+}
+.effect17__hidden {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding-right: 5px;
+  color: #fff;
+  text-align: right;
+  border-right: 1px solid #fff;
+  visibility: hidden;
+  transition: all 0.2s;
+  z-index: 999;
+  text-transform: uppercase;
 }

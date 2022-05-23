@@ -19,11 +19,11 @@
     transform: scale(1);
   }
   &:hover .effect15__hr1 {
-    opacity: 0.5;
+    opacity: 0.6;
     transform: rotate(-45deg);
   }
   &:hover .effect15__hr2 {
-    opacity: 0.5;
+    opacity: 0.6;
     transform: rotate(45deg);
   }
   &:hover .effect15__title {
@@ -42,7 +42,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
   width: 500px;
   height: 300px;
 }
@@ -52,6 +51,7 @@
   top: 85px;
   z-index: 9;
   transition: all 0.5s;
+  z-index: 99;
 }
 .effect15__hr1 {
   position: absolute;
@@ -61,6 +61,7 @@
   background-color: #fff;
   color: #fff;
   transition: all 0.5s;
+  z-index: 98;
 }
 .effect15__hr2 {
   position: absolute;
@@ -70,6 +71,7 @@
   background-color: #fff;
   color: #fff;
   transition: all 0.5s;
+  z-index: 98;
 
 }
 .effect15__description {
@@ -79,10 +81,21 @@
   z-index: 9;
   transition: all 0.5s;
   color: #fff;
+  z-index: 99;
 }
-
-
 .effect15 img {
   transition: all 0.5s;
+}
+
+.effect15__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
 }
 

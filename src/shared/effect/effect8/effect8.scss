@@ -17,6 +17,7 @@
   }
   &:hover .effect8__description {
     visibility: visible;
+    opacity: 1;
   }
 
 }
@@ -42,4 +43,6 @@
 }
 .effect8__description {
   visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
